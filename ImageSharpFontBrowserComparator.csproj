@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<SixLaborsLicenseFile>../sixlabors.lic</SixLaborsLicenseFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="SixLabors.ImageSharp" Version="4.0.0-alpha.0.55" />
+		<PackageReference Include="SixLabors.Fonts" Version="3.0.0-alpha.0.9" />
+		<PackageReference Include="SixLabors.ImageSharp.Drawing" Version="3.0.0-alpha.0.6" />
+	</ItemGroup>
+</Project>

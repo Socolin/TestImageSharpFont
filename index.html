@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        @font-face {
+            font-family: 'Adobe NotDef';
+            src: url('Fonts/AND-Regular.otf') format('opentype');
+        }
+
+        @font-face
+{
+    font-family: 'aeaf6c4f';
+    src: url('./Fonts/NotoSansSC-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '463f5cb9';
+    src: url('./Fonts/NotoSerifSC-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '79ee5bb4';
+    src: url('./Fonts/NotoSansHK-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '8c79df59';
+    src: url('./Fonts/NotoSerifHK-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '27915322';
+    src: url('./Fonts/NotoSansKR-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '00293213';
+    src: url('./Fonts/NotoSerifKR-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'cbcfc9b6';
+    src: url('./Fonts/NotoSerifArmenian-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '90410b55';
+    src: url('./Fonts/NotoSansMalayalam-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'dc270ad4';
+    src: url('./Fonts/NotoSerifMalayalam-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '15db47f3';
+    src: url('./Fonts/NotoSansGeorgian-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '19a76b23';
+    src: url('./Fonts/NotoSerifGeorgian-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'e7493ee7';
+    src: url('./Fonts/NotoSansMyanmar-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '1114cb84';
+    src: url('./Fonts/NotoSerifMyanmar-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '9dc28c65';
+    src: url('./Fonts/NotoSansEthiopic-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '9ae64389';
+    src: url('./Fonts/NotoSerifEthiopic-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '627338b9';
+    src: url('./Fonts/NotoSansTamil-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '8c4911f8';
+    src: url('./Fonts/NotoSerifTamil-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '08e1c5d7';
+    src: url('./Fonts/NotoSansLao-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'ef0d88ea';
+    src: url('./Fonts/NotoSerifLao-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'ccaf2ccc';
+    src: url('./Fonts/NotoSansGujarati-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'd53b36dc';
+    src: url('./Fonts/NotoSerifGujarati-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '4c758111';
+    src: url('./Fonts/NotoSansOriya-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '63d2a5c8';
+    src: url('./Fonts/NotoSerifOriya-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'd0c98037';
+    src: url('./Fonts/NotoSansCherokee-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '750f41fd';
+    src: url('./Fonts/NotoSansMongolian-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'ff3784fa';
+    src: url('./Fonts/NotoSans-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'a786aa11';
+    src: url('./Fonts/NotoSansRunic-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '7d66ca47';
+    src: url('./Fonts/NotoSansHebrew-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '41643bbf';
+    src: url('./Fonts/NotoSerifHebrew-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'be99abd9';
+    src: url('./Fonts/NotoSansThai-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '8621494b';
+    src: url('./Fonts/NotoSerifThai-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '724af95c';
+    src: url('./Fonts/NotoSansKannada-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '774a5d96';
+    src: url('./Fonts/NotoSerifKannada-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '2f513ed5';
+    src: url('./Fonts/NotoSansTelugu-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'fa63378c';
+    src: url('./Fonts/NotoSerifTelugu-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '7777fcba';
+    src: url('./Fonts/NotoSerif-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '8bef784b';
+    src: url('./Fonts/NotoSansKhmer-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '8f7a6bc0';
+    src: url('./Fonts/NotoSerifKhmer-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '2a7dd3d1';
+    src: url('./Fonts/NotoSansGurmukhi-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '7a346c4d';
+    src: url('./Fonts/NotoSerifGurmukhi-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '28e6b42d';
+    src: url('./Fonts/NotoSansSinhala-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '64d91808';
+    src: url('./Fonts/NotoSerifSinhala-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'b4d06246';
+    src: url('./Fonts/NotoSansBengali-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '6580fa8f';
+    src: url('./Fonts/NotoSerifBengali-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'a56d2b08';
+    src: url('./Fonts/NotoSansArabic-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'ca9d1979';
+    src: url('./Fonts/NotoSansOgham-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '5264115f';
+    src: url('./Fonts/PTSerif-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'b3eed305';
+    src: url('./Fonts/Raleway-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '15cebc94';
+    src: url('./Fonts/NotoSerifTibetan-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '9be808a0';
+    src: url('./Fonts/NotoSansCanadianAboriginal-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '30e5bd2f';
+    src: url('./Fonts/NotoSansDevanagari-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'a856af03';
+    src: url('./Fonts/NotoSerifDevanagari-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: '53189e2c';
+    src: url('./Fonts/NotoSansCoptic-Regular.ttf') format('truetype');
+}
+
+
+        body {
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .text {
+            font-size: 30px;
+        }
+        
+        .overlap {
+            background-repeat: no-repeat;
+        }
+        
+        .render  {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+<h3>Chinese (Simplified)</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: 'aeaf6c4f', 'Adobe NotDef'">敏捷的棕色狐狸跳过了懒狗。简体字测试：繁體轉換</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Chinese (Simplified).png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Chinese (Simplified).png')">
+            <div class="text" style="font-family: 'aeaf6c4f', 'Adobe NotDef'">敏捷的棕色狐狸跳过了懒狗。简体字测试：繁體轉換</div>
+        </div>
+    </div>
+</div>
+<h3>Chinese (Simplified) Serif</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '463f5cb9', 'Adobe NotDef'">敏捷的棕色狐狸跳过了懒狗。简体字测试：繁體轉換</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Chinese (Simplified) Serif.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Chinese (Simplified) Serif.png')">
+            <div class="text" style="font-family: '463f5cb9', 'Adobe NotDef'">敏捷的棕色狐狸跳过了懒狗。简体字测试：繁體轉換</div>
+        </div>
+    </div>
+</div>
+<h3>Chinese (Hong Kong)</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '79ee5bb4', 'Adobe NotDef'">敏捷的棕色狐狸跳過了懶狗。繁體字測試：簡体转换</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Chinese (Hong Kong).png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Chinese (Hong Kong).png')">
+            <div class="text" style="font-family: '79ee5bb4', 'Adobe NotDef'">敏捷的棕色狐狸跳過了懶狗。繁體字測試：簡体转换</div>
+        </div>
+    </div>
+</div>
+<h3>Chinese (Hong Kong) Serif</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '8c79df59', 'Adobe NotDef'">敏捷的棕色狐狸跳過了懶狗。繁體字測試：簡体转换</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Chinese (Hong Kong) Serif.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Chinese (Hong Kong) Serif.png')">
+            <div class="text" style="font-family: '8c79df59', 'Adobe NotDef'">敏捷的棕色狐狸跳過了懶狗。繁體字測試：簡体转换</div>
+        </div>
+    </div>
+</div>
+<h3>Korean Sans</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '27915322', 'Adobe NotDef'">빠른 갈색 여우가 게으른 개를 뛰어넘습니다. 한글 조합: 가갸거겨고교</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Korean Sans.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Korean Sans.png')">
+            <div class="text" style="font-family: '27915322', 'Adobe NotDef'">빠른 갈색 여우가 게으른 개를 뛰어넘습니다. 한글 조합: 가갸거겨고교</div>
+        </div>
+    </div>
+</div>
+<h3>Korean Serif</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '00293213', 'Adobe NotDef'">빠른 갈색 여우가 게으른 개를 뛰어넘습니다. 한글 조합: 가갸거겨고교</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Korean Serif.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Korean Serif.png')">
+            <div class="text" style="font-family: '00293213', 'Adobe NotDef'">빠른 갈색 여우가 게으른 개를 뛰어넘습니다. 한글 조합: 가갸거겨고교</div>
+        </div>
+    </div>
+</div>
+<h3>Armenian</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: 'cbcfc9b6', 'Adobe NotDef'">Արագ շագանակագույն աղվեսը ցատկում է ծույլ շան վրայով։ Ligatures: ﬓ ﬔ ﬕ</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Armenian.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Armenian.png')">
+            <div class="text" style="font-family: 'cbcfc9b6', 'Adobe NotDef'">Արագ շագանակագույն աղվեսը ցատկում է ծույլ շան վրայով։ Ligatures: ﬓ ﬔ ﬕ</div>
+        </div>
+    </div>
+</div>
+<h3>Malayalam Sans</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '90410b55', 'Adobe NotDef'">വേഗമേറിയ തവിട്ടുനിറമുള്ള കുറുക്കൻ മടിയനായ നായയുടെ മുകളിലൂടെ ചാടുന്നു। സംയുക്തം: ക്ക ത്ത്</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Malayalam Sans.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Malayalam Sans.png')">
+            <div class="text" style="font-family: '90410b55', 'Adobe NotDef'">വേഗമേറിയ തവിട്ടുനിറമുള്ള കുറുക്കൻ മടിയനായ നായയുടെ മുകളിലൂടെ ചാടുന്നു। സംയുക്തം: ക്ക ത്ത്</div>
+        </div>
+    </div>
+</div>
+<h3>Malayalam Serif</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: 'dc270ad4', 'Adobe NotDef'">വേഗമേറിയ തവിട്ടുനിറമുള്ള കുറുക്കൻ മടിയനായ നായയുടെ മുകളിലൂടെ ചാടുന്നു। സംയുക്തം: ക്ക ത്ത്</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Malayalam Serif.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Malayalam Serif.png')">
+            <div class="text" style="font-family: 'dc270ad4', 'Adobe NotDef'">വേഗമേറിയ തവിട്ടുനിറമുള്ള കുറുക്കൻ മടിയനായ നായയുടെ മുകളിലൂടെ ചാടുന്നു। സംയുക്തം: ക്ക ത്ത്</div>
+        </div>
+    </div>
+</div>
+<h3>Georgian Sans</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '15db47f3', 'Adobe NotDef'">სწრაფი ყავისფერი მელა ზარმაცი ძაღლის გადახტომა. ქართული ასოები: ა ბ გ დ ე ვ ზ</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Georgian Sans.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Georgian Sans.png')">
+            <div class="text" style="font-family: '15db47f3', 'Adobe NotDef'">სწრაფი ყავისფერი მელა ზარმაცი ძაღლის გადახტომა. ქართული ასოები: ა ბ გ დ ე ვ ზ</div>
+        </div>
+    </div>
+</div>
+<h3>Georgian Serif</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '19a76b23', 'Adobe NotDef'">სწრაფი ყავისფერი მელა ზარმაცი ძაღლის გადახტომა. ქართული ასოები: ა ბ გ დ ე ვ ზ</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Georgian Serif.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Georgian Serif.png')">
+            <div class="text" style="font-family: '19a76b23', 'Adobe NotDef'">სწრაფი ყავისფერი მელა ზარმაცი ძაღლის გადახტომა. ქართული ასოები: ა ბ გ დ ე ვ ზ</div>
+        </div>
+    </div>
+</div>
+<h3>Myanmar Sans</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: 'e7493ee7', 'Adobe NotDef'">မြန်မာစာ စမ်းသပ်မှု။ ဗျည်းပေါင်းစုံ က ခ ဂ ဃ င စ ဆ ည့် န့်</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Myanmar Sans.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Myanmar Sans.png')">
+            <div class="text" style="font-family: 'e7493ee7', 'Adobe NotDef'">မြန်မာစာ စမ်းသပ်မှု။ ဗျည်းပေါင်းစုံ က ခ ဂ ဃ င စ ဆ ည့် န့်</div>
+        </div>
+    </div>
+</div>
+<h3>Myanmar Serif</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '1114cb84', 'Adobe NotDef'">မြန်မာစာ စမ်းသပ်မှု။ ဗျည်းပေါင်းစုံ က ခ ဂ ဃ င စ ဆ ည့် န့်</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Myanmar Serif.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Myanmar Serif.png')">
+            <div class="text" style="font-family: '1114cb84', 'Adobe NotDef'">မြန်မာစာ စမ်းသပ်မှု။ ဗျည်းပေါင်းစုံ က ခ ဂ ဃ င စ ဆ ည့် န့်</div>
+        </div>
+    </div>
+</div>
+<h3>Ethiopic Sans</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '9dc28c65', 'Adobe NotDef'">ፈጣን ቡናማ ቀበሮ ሰነፍ ውሻ ዘለለ። አማርኛ ፊደላት: ሀ ሁ ሂ ሃ ሄ ህ ሆ</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Ethiopic Sans.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Ethiopic Sans.png')">
+            <div class="text" style="font-family: '9dc28c65', 'Adobe NotDef'">ፈጣን ቡናማ ቀበሮ ሰነፍ ውሻ ዘለለ። አማርኛ ፊደላት: ሀ ሁ ሂ ሃ ሄ ህ ሆ</div>
+        </div>
+    </div>
+</div>
+<h3>Ethiopic Serif</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '9ae64389', 'Adobe NotDef'">ፈጣን ቡናማ ቀበሮ ሰነፍ ውሻ ዘለለ። አማርኛ ፊደላት: ሀ ሁ ሂ ሃ ሄ ህ ሆ</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Ethiopic Serif.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Ethiopic Serif.png')">
+            <div class="text" style="font-family: '9ae64389', 'Adobe NotDef'">ፈጣን ቡናማ ቀበሮ ሰነፍ ውሻ ዘለለ። አማርኛ ፊደላት: ሀ ሁ ሂ ሃ ሄ ህ ሆ</div>
+        </div>
+    </div>
+</div>
+<h3>Tamil Sans</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '627338b9', 'Adobe NotDef'">விரைவான பழுப்பு நிற நரி சோம்பேறி நாய் மீது குதிக்கிறது। கூட்டெழுத்து: க்க த்த</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Tamil Sans.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Tamil Sans.png')">
+            <div class="text" style="font-family: '627338b9', 'Adobe NotDef'">விரைவான பழுப்பு நிற நரி சோம்பேறி நாய் மீது குதிக்கிறது। கூட்டெழுத்து: க்க த்த</div>
+        </div>
+    </div>
+</div>
+<h3>Tamil Serif</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '8c4911f8', 'Adobe NotDef'">விரைவான பழுப்பு நிற நரி சோம்பேறி நாய் மீது குதிக்கிறது। கூட்டெழுத்து: க்க த்த</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Tamil Serif.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Tamil Serif.png')">
+            <div class="text" style="font-family: '8c4911f8', 'Adobe NotDef'">விரைவான பழுப்பு நிற நரி சோம்பேறி நாய் மீது குதிக்கிறது। கூட்டெழுத்து: க்க த்த</div>
+        </div>
+    </div>
+</div>
+<h3>Lao Sans</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '08e1c5d7', 'Adobe NotDef'">ໝາຈິ້ງຈອກສີນ້ຳຕານທີ່ວ່ອງໄວກະໂດດຂ້າມໝາຂີ້ຄ້ານ ສະຫຼັບ: ກ່ ງ່ ຍ່</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Lao Sans.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Lao Sans.png')">
+            <div class="text" style="font-family: '08e1c5d7', 'Adobe NotDef'">ໝາຈິ້ງຈອກສີນ້ຳຕານທີ່ວ່ອງໄວກະໂດດຂ້າມໝາຂີ້ຄ້ານ ສະຫຼັບ: ກ່ ງ່ ຍ່</div>
+        </div>
+    </div>
+</div>
+<h3>Lao Serif</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: 'ef0d88ea', 'Adobe NotDef'">ໝາຈິ້ງຈອກສີນ້ຳຕານທີ່ວ່ອງໄວກະໂດດຂ້າມໝາຂີ້ຄ້ານ ສະຫຼັບ: ກ່ ງ່ ຍ່</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Lao Serif.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Lao Serif.png')">
+            <div class="text" style="font-family: 'ef0d88ea', 'Adobe NotDef'">ໝາຈິ້ງຈອກສີນ້ຳຕານທີ່ວ່ອງໄວກະໂດດຂ້າມໝາຂີ້ຄ້ານ ສະຫຼັບ: ກ່ ງ່ ຍ່</div>
+        </div>
+    </div>
+</div>
+<h3>Gujarati Sans</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: 'ccaf2ccc', 'Adobe NotDef'">ઝડપી ભૂરા રંગનું શિયાળ આળસુ કૂતરા પર કૂદી જાય છે। સંયુક્તાક્ષર: ક્ક ત્ત</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Gujarati Sans.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Gujarati Sans.png')">
+            <div class="text" style="font-family: 'ccaf2ccc', 'Adobe NotDef'">ઝડપી ભૂરા રંગનું શિયાળ આળસુ કૂતરા પર કૂદી જાય છે। સંયુક્તાક્ષર: ક્ક ત્ત</div>
+        </div>
+    </div>
+</div>
+<h3>Gujarati Serif</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: 'd53b36dc', 'Adobe NotDef'">ઝડપી ભૂરા રંગનું શિયાળ આળસુ કૂતરા પર કૂદી જાય છે। સંયુક્તાક્ષર: ક્ક ત્ત</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Gujarati Serif.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Gujarati Serif.png')">
+            <div class="text" style="font-family: 'd53b36dc', 'Adobe NotDef'">ઝડપી ભૂરા રંગનું શિયાળ આળસુ કૂતરા પર કૂદી જાય છે। સંયુક્તાક્ષર: ક્ક ત્ત</div>
+        </div>
+    </div>
+</div>
+<h3>Oriya Sans</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '4c758111', 'Adobe NotDef'">ଦ୍ରୁତ ବାଦାମୀ ରଙ୍ଗର ଶୃଗାଳ ଅଳସୁଆ କୁକୁର ଉପରେ ଡେଇଁପଡେ। ସଂଯୁକ୍ତ: କ୍କ ତ୍ତ</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Oriya Sans.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Oriya Sans.png')">
+            <div class="text" style="font-family: '4c758111', 'Adobe NotDef'">ଦ୍ରୁତ ବାଦାମୀ ରଙ୍ଗର ଶୃଗାଳ ଅଳସୁଆ କୁକୁର ଉପରେ ଡେଇଁପଡେ। ସଂଯୁକ୍ତ: କ୍କ ତ୍ତ</div>
+        </div>
+    </div>
+</div>
+<h3>Oriya Serif</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '63d2a5c8', 'Adobe NotDef'">ଦ୍ରୁତ ବାଦାମୀ ରଙ୍ଗର ଶୃଗାଳ ଅଳସୁଆ କୁକୁର ଉପରେ ଡେଇଁପଡେ। ସଂଯୁକ୍ତ: କ୍କ ତ୍ତ</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Oriya Serif.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Oriya Serif.png')">
+            <div class="text" style="font-family: '63d2a5c8', 'Adobe NotDef'">ଦ୍ରୁତ ବାଦାମୀ ରଙ୍ଗର ଶୃଗାଳ ଅଳସୁଆ କୁକୁର ଉପରେ ଡେଇଁପଡେ। ସଂଯୁକ୍ତ: କ୍କ ତ୍ତ</div>
+        </div>
+    </div>
+</div>
+<h3>Cherokee</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: 'd0c98037', 'Adobe NotDef'">ᏣᎳᎩ ᎠᏂᏴᏫᏯ ᎠᏰᏟ. Cherokee syllabary: Ꭰ Ꭱ Ꭲ Ꭳ Ꭴ Ꭵ Ꭶ Ꭷ Ꭸ</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Cherokee.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Cherokee.png')">
+            <div class="text" style="font-family: 'd0c98037', 'Adobe NotDef'">ᏣᎳᎩ ᎠᏂᏴᏫᏯ ᎠᏰᏟ. Cherokee syllabary: Ꭰ Ꭱ Ꭲ Ꭳ Ꭴ Ꭵ Ꭶ Ꭷ Ꭸ</div>
+        </div>
+    </div>
+</div>
+<h3>Mongolian</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '750f41fd', 'Adobe NotDef'">ᠮᠣᠩᠭᠣᠯ ᠪᠢᠴᠢᠭ᠌ ᠬᠤᠷᠳᠤᠨ ᠬᠦᠷᠡᠨ ᠦᠬᠡᠷ ᠴᠢᠨᠣ Vertical: ᠠ ᠡ ᠢ ᠣ ᠤ ᠥ ᠦ</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Mongolian.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Mongolian.png')">
+            <div class="text" style="font-family: '750f41fd', 'Adobe NotDef'">ᠮᠣᠩᠭᠣᠯ ᠪᠢᠴᠢᠭ᠌ ᠬᠤᠷᠳᠤᠨ ᠬᠦᠷᠡᠨ ᠦᠬᠡᠷ ᠴᠢᠨᠣ Vertical: ᠠ ᠡ ᠢ ᠣ ᠤ ᠥ ᠦ</div>
+        </div>
+    </div>
+</div>
+<h3>Latin Sans</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: 'ff3784fa', 'Adobe NotDef'">The quick brown fox jumps over the lazy dog. Ligatures: fi fl ffi ffl</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Latin Sans.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Latin Sans.png')">
+            <div class="text" style="font-family: 'ff3784fa', 'Adobe NotDef'">The quick brown fox jumps over the lazy dog. Ligatures: fi fl ffi ffl</div>
+        </div>
+    </div>
+</div>
+<h3>Runic</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: 'a786aa11', 'Adobe NotDef'">ᚠᚢᚦᚨᚱᚲ ᚷᚹ ᚺᚾᛁᛃ ᛇᛈᛉ ᛋᛏᛒ ᛖᛗᛚ ᛜᛟᛞ Runes Elder Futhark</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Runic.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Runic.png')">
+            <div class="text" style="font-family: 'a786aa11', 'Adobe NotDef'">ᚠᚢᚦᚨᚱᚲ ᚷᚹ ᚺᚾᛁᛃ ᛇᛈᛉ ᛋᛏᛒ ᛖᛗᛚ ᛜᛟᛞ Runes Elder Futhark</div>
+        </div>
+    </div>
+</div>
+<h3>Hebrew Sans</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '7d66ca47', 'Adobe NotDef'">השועל החום הזריז קופץ מעל הכלב העצלן. ניקוד: בָּרָא אֱלֹהִים</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Hebrew Sans.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Hebrew Sans.png')">
+            <div class="text" style="font-family: '7d66ca47', 'Adobe NotDef'">השועל החום הזריז קופץ מעל הכלב העצלן. ניקוד: בָּרָא אֱלֹהִים</div>
+        </div>
+    </div>
+</div>
+<h3>Hebrew Serif</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '41643bbf', 'Adobe NotDef'">השועל החום הזריז קופץ מעל הכלב העצלן. ניקוד: בָּרָא אֱלֹהִים</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Hebrew Serif.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Hebrew Serif.png')">
+            <div class="text" style="font-family: '41643bbf', 'Adobe NotDef'">השועל החום הזריז קופץ מעל הכלב העצלן. ניקוד: בָּרָא אֱלֹהִים</div>
+        </div>
+    </div>
+</div>
+<h3>Thai Sans</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: 'be99abd9', 'Adobe NotDef'">สุนัขจิ้งจอกสีน้ำตาลที่รวดเร็วกระโดดข้ามสุนัขขี้เกียจ วรรณยุกต์: ก่ ก้ ก๊ ก๋ ำ ั ิ ็</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Thai Sans.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Thai Sans.png')">
+            <div class="text" style="font-family: 'be99abd9', 'Adobe NotDef'">สุนัขจิ้งจอกสีน้ำตาลที่รวดเร็วกระโดดข้ามสุนัขขี้เกียจ วรรณยุกต์: ก่ ก้ ก๊ ก๋ ำ ั ิ ็</div>
+        </div>
+    </div>
+</div>
+<h3>Thai Serif</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '8621494b', 'Adobe NotDef'">สุนัขจิ้งจอกสีน้ำตาลที่รวดเร็วกระโดดข้ามสุนัขขี้เกียจ วรรณยุกต์: ก่ ก้ ก๊ ก๋ ำ ั ิ ็</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Thai Serif.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Thai Serif.png')">
+            <div class="text" style="font-family: '8621494b', 'Adobe NotDef'">สุนัขจิ้งจอกสีน้ำตาลที่รวดเร็วกระโดดข้ามสุนัขขี้เกียจ วรรณยุกต์: ก่ ก้ ก๊ ก๋ ำ ั ิ ็</div>
+        </div>
+    </div>
+</div>
+<h3>Kannada Sans</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '724af95c', 'Adobe NotDef'">ವೇಗವಾದ ಕಂದು ನರಿ ಸೋಮಾರಿ ನಾಯಿ ಮೇಲೆ ಜಿಗಿಯುತ್ತದೆ. ಸಂಯುಕ್ತ: ಕ್ಕ ತ್ತ</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Kannada Sans.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Kannada Sans.png')">
+            <div class="text" style="font-family: '724af95c', 'Adobe NotDef'">ವೇಗವಾದ ಕಂದು ನರಿ ಸೋಮಾರಿ ನಾಯಿ ಮೇಲೆ ಜಿಗಿಯುತ್ತದೆ. ಸಂಯುಕ್ತ: ಕ್ಕ ತ್ತ</div>
+        </div>
+    </div>
+</div>
+<h3>Kannada Serif</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '774a5d96', 'Adobe NotDef'">ವೇಗವಾದ ಕಂದು ನರಿ ಸೋಮಾರಿ ನಾಯಿ ಮೇಲೆ ಜಿಗಿಯುತ್ತದೆ. ಸಂಯುಕ್ತ: ಕ್ಕ ತ್ತ</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Kannada Serif.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Kannada Serif.png')">
+            <div class="text" style="font-family: '774a5d96', 'Adobe NotDef'">ವೇಗವಾದ ಕಂದು ನರಿ ಸೋಮಾರಿ ನಾಯಿ ಮೇಲೆ ಜಿಗಿಯುತ್ತದೆ. ಸಂಯುಕ್ತ: ಕ್ಕ ತ್ತ</div>
+        </div>
+    </div>
+</div>
+<h3>Telugu Sans</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '2f513ed5', 'Adobe NotDef'">వేగవంతమైన గోధుమ రంగు నక్క సోమరి కుక్క మీద దూకుతుంది। సంయుక్తం: క్క త్త</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Telugu Sans.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Telugu Sans.png')">
+            <div class="text" style="font-family: '2f513ed5', 'Adobe NotDef'">వేగవంతమైన గోధుమ రంగు నక్క సోమరి కుక్క మీద దూకుతుంది। సంయుక్తం: క్క త్త</div>
+        </div>
+    </div>
+</div>
+<h3>Telugu Serif</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: 'fa63378c', 'Adobe NotDef'">వేగవంతమైన గోధుమ రంగు నక్క సోమరి కుక్క మీద దూకుతుంది। సంయుక్తం: క్క త్త</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Telugu Serif.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Telugu Serif.png')">
+            <div class="text" style="font-family: 'fa63378c', 'Adobe NotDef'">వేగవంతమైన గోధుమ రంగు నక్క సోమరి కుక్క మీద దూకుతుంది। సంయుక్తం: క్క త్త</div>
+        </div>
+    </div>
+</div>
+<h3>Latin Serif</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '7777fcba', 'Adobe NotDef'">The quick brown fox jumps over the lazy dog. Ligatures: fi fl ffi ffl</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Latin Serif.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Latin Serif.png')">
+            <div class="text" style="font-family: '7777fcba', 'Adobe NotDef'">The quick brown fox jumps over the lazy dog. Ligatures: fi fl ffi ffl</div>
+        </div>
+    </div>
+</div>
+<h3>Khmer Sans</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '8bef784b', 'Adobe NotDef'">ឆ្កែកញ្ជ្រោងពណ៌ត្នោតរត់លឿនលោតផ្លោះឆ្កែខ្ជិល។ លេខ: ០១២៣៤៥៦៧៨៉</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Khmer Sans.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Khmer Sans.png')">
+            <div class="text" style="font-family: '8bef784b', 'Adobe NotDef'">ឆ្កែកញ្ជ្រោងពណ៌ត្នោតរត់លឿនលោតផ្លោះឆ្កែខ្ជិល។ លេខ: ០១២៣៤៥៦៧៨៉</div>
+        </div>
+    </div>
+</div>
+<h3>Khmer Serif</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '8f7a6bc0', 'Adobe NotDef'">ឆ្កែកញ្ជ្រោងពណ៌ត្នោតរត់លឿនលោតផ្លោះឆ្កែខ្ជិល។ លេខ: ០១២៣៤៥៦៧៨៉</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Khmer Serif.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Khmer Serif.png')">
+            <div class="text" style="font-family: '8f7a6bc0', 'Adobe NotDef'">ឆ្កែកញ្ជ្រោងពណ៌ត្នោតរត់លឿនលោតផ្លោះឆ្កែខ្ជិល។ លេខ: ០១២៣៤៥៦៧៨៉</div>
+        </div>
+    </div>
+</div>
+<h3>Gurmukhi Sans</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '2a7dd3d1', 'Adobe NotDef'">ਤੇਜ਼ ਭੂਰੀ ਲੂੰਬੜੀ ਆਲਸੀ ਕੁੱਤੇ ਉੱਤੇ ਛਾਲ ਮਾਰਦੀ ਹੈ। ਸੰਯੁਕਤ: ੱਕ ੱਤ</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Gurmukhi Sans.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Gurmukhi Sans.png')">
+            <div class="text" style="font-family: '2a7dd3d1', 'Adobe NotDef'">ਤੇਜ਼ ਭੂਰੀ ਲੂੰਬੜੀ ਆਲਸੀ ਕੁੱਤੇ ਉੱਤੇ ਛਾਲ ਮਾਰਦੀ ਹੈ। ਸੰਯੁਕਤ: ੱਕ ੱਤ</div>
+        </div>
+    </div>
+</div>
+<h3>Gurmukhi Serif</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '7a346c4d', 'Adobe NotDef'">ਤੇਜ਼ ਭੂਰੀ ਲੂੰਬੜੀ ਆਲਸੀ ਕੁੱਤੇ ਉੱਤੇ ਛਾਲ ਮਾਰਦੀ ਹੈ। ਸੰਯੁਕਤ: ੱਕ ੱਤ</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Gurmukhi Serif.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Gurmukhi Serif.png')">
+            <div class="text" style="font-family: '7a346c4d', 'Adobe NotDef'">ਤੇਜ਼ ਭੂਰੀ ਲੂੰਬੜੀ ਆਲਸੀ ਕੁੱਤੇ ਉੱਤੇ ਛਾਲ ਮਾਰਦੀ ਹੈ। ਸੰਯੁਕਤ: ੱਕ ੱਤ</div>
+        </div>
+    </div>
+</div>
+<h3>Sinhala Sans</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '28e6b42d', 'Adobe NotDef'">වේගවත් දුඹුරු හිවලා කම්මැලි බල්ලා උඩින් පනිනවා। සංයුක්ත: ක්‍ෂ ඥ්‍ඤ</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Sinhala Sans.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Sinhala Sans.png')">
+            <div class="text" style="font-family: '28e6b42d', 'Adobe NotDef'">වේගවත් දුඹුරු හිවලා කම්මැලි බල්ලා උඩින් පනිනවා। සංයුක්ත: ක්‍ෂ ඥ්‍ඤ</div>
+        </div>
+    </div>
+</div>
+<h3>Sinhala Serif</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '64d91808', 'Adobe NotDef'">වේගවත් දුඹුරු හිවලා කම්මැලි බල්ලා උඩින් පනිනවා। සංයුක්ත: ක්‍ෂ ඥ්‍ඤ</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Sinhala Serif.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Sinhala Serif.png')">
+            <div class="text" style="font-family: '64d91808', 'Adobe NotDef'">වේගවත් දුඹුරු හිවලා කම්මැලි බල්ලා උඩින් පනිනවා। සංයුක්ත: ක්‍ෂ ඥ්‍ඤ</div>
+        </div>
+    </div>
+</div>
+<h3>Bengali Sans</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: 'b4d06246', 'Adobe NotDef'">দ্রুত বাদামী শিয়াল অলস কুকুরের ওপর লাফ দেয়। সংযুক্ত: ক্ক ত্ত</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Bengali Sans.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Bengali Sans.png')">
+            <div class="text" style="font-family: 'b4d06246', 'Adobe NotDef'">দ্রুত বাদামী শিয়াল অলস কুকুরের ওপর লাফ দেয়। সংযুক্ত: ক্ক ত্ত</div>
+        </div>
+    </div>
+</div>
+<h3>Bengali Serif</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '6580fa8f', 'Adobe NotDef'">দ্রুত বাদামী শিয়াল অলস কুকুরের ওপর লাফ দেয়। সংযুক্ত: ক্ক ত্ত</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Bengali Serif.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Bengali Serif.png')">
+            <div class="text" style="font-family: '6580fa8f', 'Adobe NotDef'">দ্রুত বাদামী শিয়াল অলস কুকুরের ওপর লাফ দেয়। সংযুক্ত: ক্ক ত্ত</div>
+        </div>
+    </div>
+</div>
+<h3>Arabic</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: 'a56d2b08', 'Adobe NotDef'">الثعلب البني السريع يقفز فوق الكلب الكسول. الشكل: ﻻ ﻹ ﷲ</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Arabic.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Arabic.png')">
+            <div class="text" style="font-family: 'a56d2b08', 'Adobe NotDef'">الثعلب البني السريع يقفز فوق الكلب الكسول. الشكل: ﻻ ﻹ ﷲ</div>
+        </div>
+    </div>
+</div>
+<h3>Ogham</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: 'ca9d1979', 'Adobe NotDef'">᚛ᚑᚌᚐᚋ᚜ ᚁᚓᚔᚈᚆᚔ ᚄᚉᚏᚔᚑᚁᚆᚈᚐᚏ Ogham stone inscriptions</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Ogham.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Ogham.png')">
+            <div class="text" style="font-family: 'ca9d1979', 'Adobe NotDef'">᚛ᚑᚌᚐᚋ᚜ ᚁᚓᚔᚈᚆᚔ ᚄᚉᚏᚔᚑᚁᚆᚈᚐᚏ Ogham stone inscriptions</div>
+        </div>
+    </div>
+</div>
+<h3>PT Serif</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '5264115f', 'Adobe NotDef'">The quick brown fox jumps over the lazy dog. Cyrillic: Быстрая бурая лиса</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/PT Serif.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/PT Serif.png')">
+            <div class="text" style="font-family: '5264115f', 'Adobe NotDef'">The quick brown fox jumps over the lazy dog. Cyrillic: Быстрая бурая лиса</div>
+        </div>
+    </div>
+</div>
+<h3>Raleway</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: 'b3eed305', 'Adobe NotDef'">The quick brown fox jumps over the lazy dog. Ligatures: fi fl ffi ffl</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Raleway.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Raleway.png')">
+            <div class="text" style="font-family: 'b3eed305', 'Adobe NotDef'">The quick brown fox jumps over the lazy dog. Ligatures: fi fl ffi ffl</div>
+        </div>
+    </div>
+</div>
+<h3>Tibetan</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '15cebc94', 'Adobe NotDef'">བོད་ཡིག་གི་དཔེ་མཚོན། རྐ རྒ རྔ སྐ</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Tibetan.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Tibetan.png')">
+            <div class="text" style="font-family: '15cebc94', 'Adobe NotDef'">བོད་ཡིག་གི་དཔེ་མཚོན། རྐ རྒ རྔ སྐ</div>
+        </div>
+    </div>
+</div>
+<h3>Canadian Aboriginal</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '9be808a0', 'Adobe NotDef'">ᐊᓂᔑᓈᐯᒧᐎᓐ ᑲᐅᐸᐱᑫᔭᐣ Syllabics: ᐁ ᐃ ᐅ ᐊ</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Canadian Aboriginal.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Canadian Aboriginal.png')">
+            <div class="text" style="font-family: '9be808a0', 'Adobe NotDef'">ᐊᓂᔑᓈᐯᒧᐎᓐ ᑲᐅᐸᐱᑫᔭᐣ Syllabics: ᐁ ᐃ ᐅ ᐊ</div>
+        </div>
+    </div>
+</div>
+<h3>Devanagari Sans</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '30e5bd2f', 'Adobe NotDef'">तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर कूद गई। संयुक्त: क्क त्त</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Devanagari Sans.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Devanagari Sans.png')">
+            <div class="text" style="font-family: '30e5bd2f', 'Adobe NotDef'">तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर कूद गई। संयुक्त: क्क त्त</div>
+        </div>
+    </div>
+</div>
+<h3>Devanagari Serif</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: 'a856af03', 'Adobe NotDef'">तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर कूद गई। संयुक्त: क्क त्त</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Devanagari Serif.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Devanagari Serif.png')">
+            <div class="text" style="font-family: 'a856af03', 'Adobe NotDef'">तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर कूद गई। संयुक्त: क्क त्त</div>
+        </div>
+    </div>
+</div>
+<h3>Coptic</h3>
+<div class="test">
+    <div class="render chrome-render">
+        <div>Chrome: </div>
+        <div class="text" style="font-family: '53189e2c', 'Adobe NotDef'">Ⲡⲓⲃⲁϣⲟⲣ ⲛ̀ⲃⲣⲱⲙⲡⲓ ⲉⲧϧⲱⲗϩ ϧⲁⲧⲉⲛ ⲡⲓⲟⲩϩⲟⲣ ⲉⲧⲭⲁⲥⲓⲛⲓ Coptic letters</div>
+    </div>
+    <div class="render image-sharp-render">
+        <div>ImageSharp: </div>
+        <img src="output/Coptic.png" alt="">
+    </div>
+    <div class="render overlap-render">
+        <div>Overlap: </div>
+        <div class="overlap" style="background-image: url('output/Coptic.png')">
+            <div class="text" style="font-family: '53189e2c', 'Adobe NotDef'">Ⲡⲓⲃⲁϣⲟⲣ ⲛ̀ⲃⲣⲱⲙⲡⲓ ⲉⲧϧⲱⲗϩ ϧⲁⲧⲉⲛ ⲡⲓⲟⲩϩⲟⲣ ⲉⲧⲭⲁⲥⲓⲛⲓ Coptic letters</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
